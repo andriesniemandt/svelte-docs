@@ -1,11 +1,9 @@
-import {wrap} from 'svelte-spa-router/wrap'
-
 import Introduction from './pages/Introduction.md'
-import Guide from './pages/Guide.md'
+import GettingStarted from './pages/GettingStarted.md'
 
 const routes = {
     '/': Introduction,
-    '/guide': Guide,
+    '/usage/getting-started': GettingStarted,
     '*': Introduction
 }
 

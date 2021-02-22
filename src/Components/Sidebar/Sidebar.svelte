@@ -25,7 +25,7 @@
 <section>
     <div class="link-group">
         <div class="link-group-header">
-            Intro
+            About
         </div>
         <ul>
             <li><a href="/" use:link>Introduction</a></li>
@@ -36,7 +36,7 @@
             Usage
         </div>
         <ul>
-            <li><a href="/guide" use:link>Getting Started</a></li>
+            <li><a href="/usage/getting-started" use:link>Getting Started</a></li>
         </ul>
     </div>
 </section>
