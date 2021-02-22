@@ -1,3 +1,7 @@
+<script>
+    import {link} from 'svelte-spa-router'
+</script>
+
 <style>
     section {
         padding: 10% 0;
@@ -24,7 +28,7 @@
             Intro
         </div>
         <ul>
-            <li><a href="/">Introduction</a></li>
+            <li><a href="/" use:link>Introduction</a></li>
         </ul>
     </div>
     <div class="link-group">
@@ -32,7 +36,7 @@
             Usage
         </div>
         <ul>
-            <li><a href="#/guide">Getting Started</a></li>
+            <li><a href="/guide" use:link>Getting Started</a></li>
         </ul>
     </div>
 </section>

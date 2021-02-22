@@ -10,7 +10,7 @@
 		display: flex;
 	}
 	.sidebar {
-		flex-basis: 15%;
+		flex-basis: 20%;
 	}
 	.content {
 		padding: 1% 5%;
