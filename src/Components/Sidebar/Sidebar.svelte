@@ -4,9 +4,13 @@
 
 <style>
     section {
-        padding: 10% 0;
+        position: fixed;
+        left: 0;
+        top: 65px;
+        padding: 1%;
         border-right: 1px solid #14274e;
-        height: 100vh;
+        height: calc(100vh - 65px);
+        width: 15%;
         background: #f1f6f9;
     }
     section > div > ul {

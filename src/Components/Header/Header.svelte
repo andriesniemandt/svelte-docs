@@ -4,6 +4,12 @@
 
 <style>
     .header_section {
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
         color: white;
         background: #14274e;
         display: flex;

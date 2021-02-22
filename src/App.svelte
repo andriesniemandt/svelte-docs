@@ -8,6 +8,7 @@
 <style>
 	.flex_section {
 		display: flex;
+        margin-top: 75px;
 	}
 	.sidebar {
 		flex-basis: 20%;
