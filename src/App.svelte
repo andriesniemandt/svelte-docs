@@ -1,7 +1,8 @@
 <script>
+    import Router from 'svelte-spa-router'
+    import routes from './routes'
     import Header from './Components/Header/Header.svelte'
     import Sidebar from './Components/Sidebar/Sidebar.svelte'
-    import Main from './Components/Main/Main.svelte'
 </script>
 
 <style>
@@ -9,10 +10,9 @@
 		display: flex;
 	}
 	.sidebar {
-		flex-grow: 1;
+		flex-basis: 12%;
 	}
 	.content {
-		flex-grow: 9;
 		padding: 1%;
 	}
 </style>
@@ -24,7 +24,7 @@
             <Sidebar/>
         </div>
         <div class="content">
-            <Main />
+            <Router {routes}/>
         </div>
     </section>
 </main>
