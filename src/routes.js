@@ -1,19 +1,12 @@
 import {wrap} from 'svelte-spa-router/wrap'
 
-import Main from './Components/Main/Main.svelte'
+import Introduction from './pages/Introduction.md'
+import Guide from './pages/Guide.md'
 
 const routes = {
-    '/': wrap({
-        component: Main,
-        props: {
-            page: 'pages/introduction.md'
-        }}),
-    '/guide': wrap({
-        component: Main,
-        props: {
-            page: 'pages/guide.md'
-        }}),
-    '*': Main
+    '/': Introduction,
+    '/guide': Guide,
+    '*': Introduction
 }
 
 export default routes

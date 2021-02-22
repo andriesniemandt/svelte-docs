@@ -10,10 +10,11 @@
 		display: flex;
 	}
 	.sidebar {
-		flex-basis: 12%;
+		flex-basis: 15%;
 	}
 	.content {
-		padding: 1%;
+		padding: 1% 5%;
+        width: 100%;
 	}
 </style>
 

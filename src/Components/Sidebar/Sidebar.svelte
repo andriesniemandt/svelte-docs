@@ -1,27 +1,38 @@
 <style>
     section {
-        padding: 2%;
-        width: 100%;
-        border-right: 1px solid lightgrey;
+        padding: 10% 0;
+        border-right: 1px solid #14274e;
         height: 100vh;
+        background: #f1f6f9;
     }
-
     section > div > ul {
         list-style: none;
+        font-size: 0.9rem;
+        margin-left: 5%;
+    }
+    .link-group-header {
+        margin-left: 10%;
+        margin-top: 10%;
+        text-transform: uppercase;
+        font-weight: 500;
     }
 </style>
 
 <section>
-    <div>
+    <div class="link-group">
+        <div class="link-group-header">
+            Intro
+        </div>
         <ul>
             <li><a href="/">Introduction</a></li>
         </ul>
     </div>
-    <div>
-        <h5>Guide</h5>
+    <div class="link-group">
+        <div class="link-group-header">
+            Usage
+        </div>
         <ul>
-            <li><a href="#/guide">About</a></li>
-            <li>Your Profile</li>
+            <li><a href="#/guide">Getting Started</a></li>
         </ul>
     </div>
 </section>
