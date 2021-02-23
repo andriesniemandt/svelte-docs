@@ -1,18 +1,31 @@
+/* BASE COLOURS
+	Gray
+	#dddddd
+
+	Deep Blue
+	#222831
+
+	Blue Gray
+	#30475e
+
+	Orange Hue
+	#f05454
+ */
+
 html, body {
-	position: relative;
-	width: 100%;
-	height: 100%;
+	overflow-y: auto;
+	line-height: 1.45;
+	font-size: 100%;
 }
 
 body {
-	color: #333;
 	margin: 0;
-	box-sizing: border-box;
+	color: #333;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 a {
-	color: #14274e;
+	color: #222831;
 	text-decoration: none;
 }
 
@@ -21,7 +34,7 @@ a:hover {
 }
 
 a:visited {
-	color: #14274e;
+	color: #f05454;
 }
 
 label {

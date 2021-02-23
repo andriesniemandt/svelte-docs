@@ -1,46 +1,62 @@
 <script>
-    import {link} from 'svelte-spa-router'
+    import NavSet from '../NavSet/NavSet.svelte'
+
+    const introLinks = [
+        {
+            name: "Introduction",
+            href: "/#/"
+        },
+        {
+            name: "Another link",
+            href: "/#/"
+        },
+        {
+            name: "And another",
+            href: "/#/"
+        }
+    ]
+
+    const usageLinks = [
+        {
+            name: "Getting Started",
+            href: "/#/usage/getting-started"
+        }
+    ]
 </script>
 
 <style>
-    section {
-        position: fixed;
-        left: 0;
-        top: 65px;
-        padding: 1%;
-        border-right: 1px solid #14274e;
-        height: calc(100vh - 65px);
-        width: 15%;
-        background: #f1f6f9;
+    aside {
+        flex-shrink: 0;
+        width: 312px;
+        padding: 24px;
+        position: sticky;
+        top: 0;
+        box-sizing: border-box;
+        border-right: 1px solid #dddddd;
+        overflow-y: auto;
+        height: 100vh;
     }
-    section > div > ul {
-        list-style: none;
-        font-size: 0.9rem;
-        margin-left: 5%;
-    }
-    .link-group-header {
-        margin-left: 10%;
-        margin-top: 10%;
-        text-transform: uppercase;
+
+    .logo-wrapper {
+        font-size: 2rem;
         font-weight: 500;
+        margin-bottom: 24px;
+        color: #f05454;
     }
 </style>
 
-<section>
-    <div class="link-group">
-        <div class="link-group-header">
-            About
-        </div>
-        <ul>
-            <li><a href="/" use:link>Introduction</a></li>
-        </ul>
+<aside>
+    <div class="logo-wrapper">
+        CUSTOM LOGO
     </div>
-    <div class="link-group">
-        <div class="link-group-header">
-            Usage
-        </div>
-        <ul>
-            <li><a href="/usage/getting-started" use:link>Getting Started</a></li>
-        </ul>
+    <div class="sidebar">
+        <NavSet
+                title="Introduction"
+                links={introLinks}
+        />
+        <NavSet
+                title="Usage Guide"
+                links={usageLinks}
+        />
     </div>
-</section>
+</aside>
